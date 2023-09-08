@@ -2,7 +2,7 @@
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-08 17:26
 LastEditTime: 2023-09-08 17:26
-Description: 
+Description: 检查是否有跳过的天数
 '''
 import pandas as pd
 

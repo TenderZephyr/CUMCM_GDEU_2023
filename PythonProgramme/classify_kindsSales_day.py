@@ -1,8 +1,8 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-08 10:26
-LastEditTime: 2023-09-08 10:51
-Description: 
+LastEditTime: 2023-09-08 22:24
+Description: 计算每个品类的日销售量
 '''
 import pandas as pd
 import os
