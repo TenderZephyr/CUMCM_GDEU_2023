@@ -26,7 +26,7 @@ df2['年份'] = df2['销售日期'].dt.year
 merged_df = pd.merge(df2, product_mapping, on='单品编码', how='left')
 
 # 按分类名称、年份和单品名称对销量列进行叠加
-result_df = merged_df.groupby(['分类名称', '单品名称','年份'])['销量(千克)'].sum().reset_index()
+result_df = merged_df.groupby(['单品名称', '分类名称','年份'])['销量(千克)'].sum().reset_index()
 
 # 按分类名称分别保存结果到不同的Excel文件
 for category_name, category_data in result_df.groupby('分类名称'):
