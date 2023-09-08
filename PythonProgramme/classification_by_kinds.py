@@ -2,7 +2,7 @@
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-07 22:59
 LastEditTime: 2023-09-07 23:05
-Description: 
+Description: 将销售数据按照品类拆分成不同的excel并且不同单品存放到不同的工作表
 '''
 
 import pandas as pd

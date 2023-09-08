@@ -1,3 +1,10 @@
+'''
+Author: Jonty ljt20030312@Outlook.com
+Date: 2023-09-07 21:59
+LastEditTime: 2023-09-08 10:07
+Description: 将销量数据按照单品拆分成不同的excel
+'''
+
 import pandas as pd
 import os
 
