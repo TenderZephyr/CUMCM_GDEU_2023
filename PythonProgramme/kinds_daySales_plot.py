@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib
-matplotlib.rcParams['font.sans-serif'] = ['SimHei']     # 显示中文
+matplotlib.rcParams['font.sans-serif'] = ['SimSun']     # 显示中文
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 # 指定包含Excel文件的文件夹路径
@@ -31,10 +31,10 @@ for i, file_name in enumerate(file_names):
         df = pd.read_excel(file_path)
 
         # 创建一个新的图表
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(50, 18))
 
         # 绘制销售数据，使用指定的颜色
-        plt.plot(df['销售日期'], df['销量(千克)'], marker='o', linestyle='-', markersize=8, color=colors[i])
+        plt.plot(df['销售日期'], df['销量(千克)'], linestyle='-', markersize=8, color=colors[i])
 
         # 设置标题、标签等
         plt.title(f'{file_name}')
