@@ -1,7 +1,7 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-08 11:21
-LastEditTime: 2023-09-08 19:44
+LastEditTime: 2023-09-09 16:41
 Description: 将六个品类的日销售量通过六张图表显示
 '''
 import os
@@ -10,7 +10,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 #plt.rcParams['font.sans-serif'] = ['SimHei']  # 黑体
 plt.rcParams['axes.unicode_minus'] = False    # 解决无法显示符号的问题
-sns.set(font = 'SimHei', style = "whitegrid", font_scale = 1.6)        # 解决Seaborn中文显示问题
+ # 解决Seaborn中文显示问题
+sns.set(font = 'SimHei', style = "whitegrid", font_scale = 1.6)       
 
 # 指定包含Excel文件的文件夹路径"
 folder_path = "D:\\桌面\\CUMCM\\classificationFile_sales\\sumSales_day"
