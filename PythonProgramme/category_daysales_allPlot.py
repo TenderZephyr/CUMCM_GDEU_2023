@@ -1,3 +1,9 @@
+'''
+Author: Jonty ljt20030312@Outlook.com
+Date: 2023-09-09 16:35
+LastEditTime: 2023-09-09 21:19
+Description: 绘制所有品类的日销售折线图
+'''
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -49,4 +55,3 @@ plt.savefig(f'D:\桌面\CUMCM\classificationFile_sales\sumSales_day_plot\\daySal
 
 # 显示图表
 #plt.show()
-
