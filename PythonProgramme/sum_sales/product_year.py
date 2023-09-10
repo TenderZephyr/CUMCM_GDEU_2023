@@ -8,9 +8,9 @@ import pandas as pd
 import os
 
 # 定义第一个Excel文件的路径和第二个Excel文件的路径
-file1_path = 'D:\\桌面\\CUMCM\\question\\附件1.xlsx'
-file2_path = 'D:\\桌面\\CUMCM\\question\\附件2.xlsx'
-output_folder = 'D:\\桌面\\CUMCM\\classify_sales\\sum_year'
+file1_path = 'question\\附件1.xlsx'
+file2_path = 'question\\附件2.xlsx'
+output_folder = 'classify_sales\\sum_year'
 
 # 读取第一个Excel文件以建立单品编码到单品名称和分类名称的映射
 df1 = pd.read_excel(file1_path)

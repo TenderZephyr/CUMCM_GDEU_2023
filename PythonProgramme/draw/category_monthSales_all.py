@@ -1,7 +1,7 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-09 21:48
-LastEditTime: 2023-09-10 12:19
+LastEditTime: 2023-09-10 13:48
 Description: 
 '''
 import os
@@ -16,7 +16,7 @@ plt.rcParams['axes.unicode_minus'] = False    # 解决无法显示符号的问�
 sns.set(font = 'SimHei', style = "darkgrid", font_scale = 1.6)  
 
 # 指定包含Excel文件的文件夹路径
-folder_path = "D:\\桌面\\CUMCM\\classify_sales\\sum_category_month"
+folder_path = "classify_sales\\sum_category_month"
 
 # 列出文件夹中的所有文件
 file_names = os.listdir(folder_path)
@@ -46,7 +46,7 @@ plt.ylabel('销量(千克)')
 plt.legend()
 
 # 如果需要保存图表到文件，可以使用以下命令
-plt.savefig(f'D:\桌面\CUMCM\plot\\month_sales_all.png')
+plt.savefig(f'plot\\month_sales_all.png')
 
 # 显示图表
 #plt.show()

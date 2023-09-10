@@ -8,10 +8,10 @@ import pandas as pd
 import os
 
 # 指定包含多个Excel文件的文件夹路径
-input_folder = 'D:\\桌面\\CUMCM\\classify_category\\all_in_one_sheet'
+input_folder = 'classify_category\\all_in_one_sheet'
 
 # 指定存放结果的文件夹的根路径
-output_folder = 'D:\\桌面\\CUMCM\\classify_sales\\sum_category_day'
+output_folder = 'classify_sales\\sum_category_day'
 
 # 获取文件夹中的所有Excel文件
 excel_files = [f for f in os.listdir(input_folder) if f.endswith('.xlsx')]

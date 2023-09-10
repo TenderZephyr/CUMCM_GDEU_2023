@@ -1,7 +1,7 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-07 22:59
-LastEditTime: 2023-09-07 23:05
+LastEditTime: 2023-09-10 13:46
 Description: 将销售数据按照品类拆分成不同的excel并且不同单品存放到不同的工作表
 '''
 
@@ -9,18 +9,18 @@ import pandas as pd
 import os
 
 # 读取第一个Excel文件，包含单品编码、单品名称和分类名称
-file1 = 'D:\\桌面\\CUMCM\\question\\附件1.xlsx'
+file1 = 'question\\附件1.xlsx'
 df1 = pd.read_excel(file1)
 
 # 读取第二个Excel文件，包含单品编码和其他信息
-file2 = 'D:\\桌面\\CUMCM\\question\\附件2.xlsx'
+file2 = 'question\\附件2.xlsx'
 df2 = pd.read_excel(file2)
 
 # 获取第一个Excel文件的分类名称列表
 categories = df1['分类名称'].unique()
 
 # 指定存放结果的文件夹路径
-output_folder = 'D:\\桌面\\CUMCM\\classify_category\\category_product_sheet'
+output_folder = 'classify_category\\category_product_sheet'
 
 # 确保输出文件夹存在，如果不存在则创建它
 os.makedirs(output_folder, exist_ok=True)

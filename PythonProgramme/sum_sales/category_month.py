@@ -10,10 +10,10 @@ import os
 import xlsxwriter
 
 # 获取所有 Excel 文件的文件名
-excel_files = glob('D:\\桌面\\CUMCM\\classify_sales\\sum_category_day\\*.xlsx')  # 替换为你的文件路径
+excel_files = glob('classify_sales\\sum_category_day\\*.xlsx')  # 替换为你的文件路径
 
 # 创建一个目录来存储新的 Excel 文件
-output_directory = 'D:\\桌面\CUMCM\\classify_sales\\sum_category_month'  # 替换为你想要保存文件的文件夹路径
+output_directory = 'classify_sales\\sum_category_month'  # 替换为你想要保存文件的文件夹路径
 os.makedirs(output_directory, exist_ok=True)
 
 # 读取每个 Excel 文件并累计销量并保存到不同的文件

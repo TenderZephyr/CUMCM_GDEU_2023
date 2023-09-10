@@ -1,7 +1,7 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-09 22:33
-LastEditTime: 2023-09-10 11:50
+LastEditTime: 2023-09-10 13:41
 Description: 将附件二的销量数据按照分类拆分到不同的表格，
              每个表格横坐标为单品编码，众坐标为销售日期
 '''
@@ -9,10 +9,10 @@ import pandas as pd
 from openpyxl import Workbook
 
 # 读取第一个Excel文件，包含分类信息
-excel1 = pd.read_excel('D:\\桌面\\CUMCM\\question\\附件1.xlsx')
+excel1 = pd.read_excel('question\\附件1.xlsx')
 
 # 读取第二个Excel文件，包含销售信息
-excel2 = pd.read_excel('D:\\桌面\\CUMCM\\question\\附件2.xlsx')
+excel2 = pd.read_excel('question\\附件2.xlsx')
 
 # 获取分类名称列表
 categories = excel1['分类名称'].unique()
@@ -45,7 +45,7 @@ for category in categories:
             worksheet.cell(row=i, column=j, value=quantity)
     
     # 保存Excel文件，文件名使用分类名称
-    output_workbook.save(f'D:\\桌面\\CUMCM\\classify_sales\\product_day\\{category}.xlsx')
+    output_workbook.save(f'classify_sales\\product_day\\{category}.xlsx')
 
 print("所有分类的数据已保存为单独的Excel文件")
 

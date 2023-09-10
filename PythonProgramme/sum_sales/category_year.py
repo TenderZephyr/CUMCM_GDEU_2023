@@ -8,8 +8,8 @@ import pandas as pd
 import os
 
 # 定义包含六个Excel文件的文件夹路径和新Excel文件的路径
-folder_path = 'D:\\桌面\\CUMCM\\classify_sales\\sum_category_day'
-output_file = 'D:\\桌面\\CUMCM\\classify_sales\\sum_year\\category_all.xlsx'
+folder_path = 'classify_sales\\sum_category_day'
+output_file = 'classify_sales\\sum_year\\category_all.xlsx'
 
 # 创建一个空的DataFrame来存储累加后的数据
 result_df = pd.DataFrame(columns=['商品名', '年份', '销量'])

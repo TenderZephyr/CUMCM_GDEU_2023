@@ -1,25 +1,25 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-08 10:18
-LastEditTime: 2023-09-10 11:44
+LastEditTime: 2023-09-10 13:33
 Description: 将销售数据按品类拆分成不同的excel文件
 '''
 import pandas as pd
 import os
 
 # 读取第一个Excel文件，包含单品编码、单品名称和分类名称
-inputFile1 = 'D:\\桌面\\CUMCM\\question\\附件1.xlsx'
+inputFile1 = 'question\\附件1.xlsx'
 df1 = pd.read_excel(inputFile1)
 
 # 读取第二个Excel文件，包含单品编码和其他信息
-inputFile2 = 'D:\\桌面\\CUMCM\\question\\附件2.xlsx'
+inputFile2 = 'question\\附件2.xlsx'
 df2 = pd.read_excel(inputFile2)
 
 # 获取第一个Excel文件的分类名称列表
 categories = df1['分类名称'].unique()
 
 # 指定存放结果的文件夹路径
-output_folder = 'D:\\桌面\\CUMCM\\classify_category\\all_in_one_sheet'
+output_folder = 'CUMCM\\classify_category\\all_in_one_sheet'
 
 # 确保输出文件夹存在，如果不存在则创建它
 os.makedirs(output_folder, exist_ok=True)

@@ -1,7 +1,7 @@
 '''
 Author: Jonty ljt20030312@Outlook.com
 Date: 2023-09-07 21:59
-LastEditTime: 2023-09-10 11:32
+LastEditTime: 2023-09-10 13:47
 Description: 将销量数据按照单品拆分成不同的excel
 '''
 
@@ -9,7 +9,7 @@ import pandas as pd
 import os
 
 # 指定原始.xlsx文件的路径（包括文件名）
-input_file = 'D:\\桌面\\CUMCM\\question\\附件2.xlsx'
+input_file = 'question\\附件2.xlsx'
 
 # 读取原始.xlsx文件
 df = pd.read_excel(input_file)
@@ -21,7 +21,7 @@ column_to_classify = '单品编码'
 categories = df[column_to_classify].unique()
 
 # 指定存放分类结果的文件夹路径
-output_folder = 'D:\\桌面\\CUMCM\\classify_product'
+output_folder = 'classify_product'
 
 # 确保输出文件夹存在，如果不存在则创建它
 os.makedirs(output_folder, exist_ok=True)
