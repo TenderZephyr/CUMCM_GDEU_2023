@@ -7,7 +7,7 @@ Description: 检查是否有跳过的天数
 import pandas as pd
 
 # 读取Excel文件
-excel_file = 'D:\\桌面\\CUMCM\\classificationFile_sales\\sumSales_day\\sumSales_day_花菜类all.xlsx'  # 请将文件路径替换为你的Excel文件路径
+excel_file = 'D:\\桌面\\CUMCM\\classify_sales\\sum_category_day\\sum_category_day_花菜类all.xlsx'  # 请将文件路径替换为你的Excel文件路径
 df = pd.read_excel(excel_file)
 
 # 将销售日期列转换为日期时间类型
